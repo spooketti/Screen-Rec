@@ -33,11 +33,11 @@ let mediaRecorder;
         const blob = new Blob(recordedChunks, { type: `video/${vidType}` });
         const url = URL.createObjectURL(blob);
         
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `recording.${rawVidType}`;
-        a.click();
-        URL.revokeObjectURL(url);
+        let download = document.getElementById('result');
+        download.href = url;
+        download.download = `recording.${rawVidType}`;
+        // a.click();
+        // URL.revokeObjectURL(url);
       };
 
       mediaRecorder.start();
