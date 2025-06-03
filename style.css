@@ -1,0 +1,12 @@
+#header
+{
+    height:60px;
+    background-color: rgb(33, 0, 33);
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    color: rgb(226, 210, 150);
+    display: flex;
+    align-items: center;
+}
